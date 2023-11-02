@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <div class="contenedor">
+             <h1>Introduce tus datos para crear una cuenta</h1>
+             <p>los valores marcados con un * son obligatorios</p>
+             <form action="#">
+                <ul class="menu-list">
+                    <li><label for="name">NOMBRE*:</label></li>
+                    <li><input type="text" id="name" required placeholder="Introduce tu nombre..."></li>
+                    <li><label for="first-name">PRIMER APELLIDO*:</label></li>
+                    <li><input type="text" id ="first-name" required placeholder="Introduce tu primer apellido"></li>
+                    <li><label for="second-name">SEGUNDO APELLIDO:</label></li>
+                    <li><input type="text" id ="second-name" placeholder="Introduce tu segundo apellido"></li>
+                    <li><label for="dni">DNI*:</label></li>
+                    <li><input type="text" id ="dni" required pattern="[0-9]{8}[A-Za-z]{1}" placeholder="Introduce tu DNI"></li>
+                </ul>
+             </form>
+             <button>REGISTRO</button>
+        </div>
+    </section>
+</body>
+</html>
